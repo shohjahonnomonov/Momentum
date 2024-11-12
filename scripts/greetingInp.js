@@ -6,4 +6,4 @@ export function greetingInp() {
     });
 
     greetingInp.value = localStorage.getItem('greeting');
-}
+} 
