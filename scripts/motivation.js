@@ -18,15 +18,15 @@ export function motivation() {
         }
     ];
 
-    let Index = 0;
 
     changeQuote.addEventListener('click', () => {
-        quote.textContent = array[Index].text;
-        author.textContent = array[Index].author;
+        const random = Math.floor(Math.random() * array.length);
+        quote.textContent = array[random].text;
+        author.textContent = array[random].author;
         Index = (Index + 1) % array.length;
     });
 
-
-    quote.textContent = array[Index].text;
-    author.textContent = array[Index].author;
+    const random = Math.floor(Math.random() * array.length);
+    quote.textContent = array[random].text;
+    author.textContent = array[random].author;
 }
